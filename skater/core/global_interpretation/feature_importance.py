@@ -328,7 +328,7 @@ def compute_feature_importance(feature_id, input_data, estimator_fn,
             samples = copy_of_data_set.generate_column_sample(feature_id, n_samples=n,
                                                               strategy='uniform-over-similarity-ranks')
         except Exception as e:
-            print(str(e)
+            print(str(e))
             samples = copy_of_data_set.generate_column_sample(feature_id, n_samples=n, strategy='random-choice')   
     else:
         samples = copy_of_data_set.generate_column_sample(feature_id, n_samples=n, strategy='random-choice')
